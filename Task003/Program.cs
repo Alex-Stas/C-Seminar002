@@ -1,5 +1,5 @@
-﻿/* Принимает на ввод два числа и проверяет является ли первое
-*квадратом второго. Выдает yes/no.
+﻿/* Принимает на ввод два числа и если первое кратно второму выдает ответ кратно,
+*если нет, то остаток от деления.
 */
 Console.Write("Enter first number, please: ");
 string first = Console.ReadLine()!;
@@ -12,12 +12,12 @@ string answer = "";
 
 if (firstnum % secondnum == 0)
 {
-    answer = "Yes";
+    answer = "Divisible";
     // Console.WriteLine("Yes");
 }
 else
 {
-    answer = "No";
+    answer = $"Non Divisible, reminder is: {firstnum % secondnum}";
     // Console.WriteLine("No");
 }
 Console.WriteLine (answer);
