@@ -8,7 +8,7 @@ string second = Console.ReadLine()!;
 
 int firstnum = int.Parse(first);
 int secondnum = int.Parse(second);
-string answer = null;
+string answer = "";
 
 if (firstnum % secondnum == 0)
 {
